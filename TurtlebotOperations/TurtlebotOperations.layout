@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="TurtlebotOperationsMain.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="8491" topLine="183" />
+	</File>
+	<File name="TurtlebotOperationsMain.h" open="1" top="0" tabpos="2">
+		<Cursor position="624" topLine="1" />
+	</File>
+	<File name="TurtlebotOps.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="4542" topLine="0" />
+	</File>
+	<File name="TurtlebotOps.h" open="1" top="0" tabpos="3">
+		<Cursor position="298" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TurtlebotOperations" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TurtlebotOperations" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/TurtlebotOperations" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-I/opt/ros/diamondback/stacks/joystick_drivers/joy/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/diagnostics/diagnostic_updater/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/common_msgs/diagnostic_msgs/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/common_msgs/diagnostic_msgs/srv_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/common_msgs/geometry_msgs/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/tools/rosbag/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/srv_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/tools/rostest/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/srv_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_serialization/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_traits/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/src" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/utilities/rostime/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/include" />
+			<Add option="-I/opt/ros/diamondback/stacks/ros_comm/messages/std_msgs/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/ros/core/roslib/msg_gen/cpp/include" />
+			<Add option="-I/opt/ros/diamondback/ros/core/roslib/include" />
+			<Add option="-I/opt/ros/diamondback/ros/tools/rospack" />
+			<Add option="-I/opt/ros/diamondback/ros/tools/rospack/include" />
+			<Add option="-DWX_PRECOMP" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/tools/rosbag/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/tools/rosbag/lib -lrosbag" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/tools/topic_tools/lib -ltopic_tools" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/lib -lros -lboost_thread-mt -lboost_signals-mt" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp/lib -lros -lboost_thread-mt -lboost_signals-mt" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_serialization/lib" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/clients/cpp/roscpp_serialization/lib -lroscpp_serialization" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/utilities/xmlrpcpp/lib -lXmlRpc" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/lib" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/tools/rosconsole/lib -lrosconsole -lboost_thread-mt -llog4cxx" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/utilities/rostime/lib" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/utilities/rostime/lib -lrostime" />
+			<Add option="-L/opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/lib" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/stacks/ros_comm/utilities/cpp_common/lib -lcpp_common" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/ros/core/roslib/lib" />
+			<Add option="-L/opt/ros/diamondback/ros/core/roslib/lib -lroslib" />
+			<Add option="-L/opt/ros/diamondback/ros/tools/rospack/lib" />
+			<Add option="-Wl,-rpath,/opt/ros/diamondback/ros/tools/rospack/lib -lrospack -lrosstack" />
+		</Linker>
+		<Unit filename="TurtlebotOperationsApp.cpp" />
+		<Unit filename="TurtlebotOperationsApp.h" />
+		<Unit filename="TurtlebotOperationsMain.cpp" />
+		<Unit filename="TurtlebotOperationsMain.h" />
+		<Unit filename="TurtlebotOps.cpp" />
+		<Unit filename="TurtlebotOps.h" />
+		<Unit filename="wx_pch.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="wxsmith/TurtlebotOperationsframe.wxs" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="TurtlebotOperationsApp.cpp" main="TurtlebotOperationsFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/TurtlebotOperationsframe.wxs" src="TurtlebotOperationsMain.cpp" hdr="TurtlebotOperationsMain.h" name="TurtlebotOperationsFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
